@@ -3,14 +3,14 @@ settings = {}
 settings['reg'] = '''DEBUG_PROPAGATE_EXCEPTIONS = DEBUG
 
 ADMINS = (
-	('Ryan Rogers', 'rrogers522@gmail.com'),
+	('', ''),
 )
 
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'
 DATABASE_NAME = '$(p_name)'
-DATABASE_USER = 'root'
+DATABASE_USER = ''
 DATABASE_PASSWORD = ''
 DATABASE_HOST = ''
 DATABASE_PORT = ''
