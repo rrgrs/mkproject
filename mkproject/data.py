@@ -9,7 +9,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'mysql'
-DATABASE_NAME = '$(p_name)'
+DATABASE_NAME = '%(p_name)s'
 DATABASE_USER = ''
 DATABASE_PASSWORD = ''
 DATABASE_HOST = ''
@@ -41,7 +41,7 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '$(key)s'
+SECRET_KEY = '%(key)s'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -201,7 +201,7 @@ from os.path import dirname, join, realpath
 sys.path[0:0] = [
     realpath(join(dirname(__file__), '..', 'apps')),
     realpath(join(dirname(__file__), '..', 'deps')),
-    realpath(join(dirname(__file__), '..', '$(p_name)s')),
+    realpath(join(dirname(__file__), '..', '%(p_name)s')),
     realpath(join(dirname(__file__), '..')),
 ]
 
@@ -218,7 +218,7 @@ from os.path import dirname, join, realpath
 sys.path[0:0] = [
     realpath(join(dirname(__file__), '..', 'apps')),
     realpath(join(dirname(__file__), '..', 'deps')),
-    realpath(join(dirname(__file__), '..', '$(p_name)s')),
+    realpath(join(dirname(__file__), '..', '%(p_name)s')),
     realpath(join(dirname(__file__), '..')),
 ]
 
